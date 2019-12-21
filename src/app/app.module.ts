@@ -16,12 +16,13 @@ import { HttpClientModule } from '@angular/common/http';
 //Material
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatInputModule,MatCardModule,MatSelectModule,MatTableModule, MatToolbarModule, MatDialogModule, MatListModule} from '@angular/material';
+import { MatButtonModule, MatInputModule,MatCardModule,MatSelectModule,MatTableModule, MatToolbarModule
+        , MatDialogModule, MatListModule, MatSortModule, MatPaginatorModule, MatIconModule} from '@angular/material';
 import { NewEntryComponent } from './new-entry/new-entry.component';
 
 
 //forms
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { UpdateEntryComponent } from './update-entry/update-entry.component';
 import { DeleteEntryComponent } from './delete-entry/delete-entry.component';
 import { RegisterComponent } from './register/register.component';
@@ -45,9 +46,11 @@ import { LoginComponent } from './login/login.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatTableModule, MatInputModule,MatCardModule,MatSelectModule,
-    MatToolbarModule, MatDialogModule, MatListModule,
+    MatToolbarModule, MatDialogModule, MatListModule,MatSortModule,
+    MatPaginatorModule,MatIconModule,
     AppRouterModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   entryComponents:[UpdateEntryComponent],
   providers: [EntryService, AuthService],
